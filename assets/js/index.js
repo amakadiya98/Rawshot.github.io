@@ -14,6 +14,13 @@ $(function () {
             {
                 breakpoint: 600,
                 settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                 },
@@ -40,6 +47,22 @@ $(function () {
                 },
             },
         ],
+    });
+});
+
+$(function () {
+    $(".video-carousel-mobile").slick({
+        centerMode:true,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 2000,
+        cssEase: "linear",
+        arrows: false,
+        dots: false,
+     
     });
 });
 
