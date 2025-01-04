@@ -1006,6 +1006,10 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  .banner-content .banner-text-part .text-content {
+    margin-top: 50px;
+  }
+
   .main-heading {
     font-size: 54px;
     line-height: 58px;
@@ -1026,10 +1030,11 @@ body {
 
   .banner-section .banner-content {
     flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 
   .banner-section::before {
-    top: 46%;
+    top: 82%;
     width: 180px;
     height: 110px;
   }
@@ -1234,6 +1239,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
   .footer-section .footer-content .footer-input-form .input-button input {
     padding: 16px 228px 16px 10px;
     font-size: 20px;
@@ -1315,7 +1321,7 @@ body {
 
 @media (max-width: 767px) {
   .banner-section::before {
-    top: 36%;
+    top: 80%;
   }
 
   .mobileSlider .container {
@@ -1357,6 +1363,10 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+  .banner-content .banner-text-part .text-content {
+    margin-top: 60px;
+  }
+
   .footer-section .footer-content .footer-input-form .input-button input {
     padding: 16px 124px 16px 10px;
   }
@@ -1438,7 +1448,7 @@ body {
   }
 
   .banner-section::before {
-    top: 35%;
+    top: 86%;
     width: 128px;
     height: 80px;
     left: -8%;
@@ -1725,7 +1735,7 @@ body {
   }
 
   .banner-section::before {
-    top: 34%;
+    top: 86%;
   }
 
   .banner-section::after {
@@ -1786,6 +1796,7 @@ body {
   .footer-section .footer-content .footer-input-form .input-button input::placeholder {
     font-size: 16px;
   }
+
   .footer-section .footer-content .footer-input-form .input-button input {
     font-size: 16px;
   }
