@@ -38,7 +38,7 @@ $('.default-carousel').owlCarousel({
         },
         1300: {
             items: 4.5,
-            margin: 50,
+            margin: 0,
         },
         1600: {
             items: 5.5,
