@@ -1,103 +1,128 @@
-
-$(function () {
-    $(".video-carousel").slick({
-        infinite: true,
-        slidesToShow: 7,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 2000,
-        cssEase: "linear",
-        arrows: false,
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 1600,
-                settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    });
+$('.default-carousel').owlCarousel({
+    loop: true,
+    margin: 50,
+    nav: false,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 2000,
+    autoplaySpeed: 2000,
+    slideTransition: "linear",
+    stagePadding: 0,
+    autoplayHoverPause: false,
+    responsive: {
+        0: {
+            items: 2.5,
+            margin: 10,
+            autoplay: true,
+        },
+        420: {
+            items: 3,
+            margin: 10,
+            autoplay: true,
+        },
+        600: {
+            items: 3.5,
+            margin: 20,
+        },
+        800: {
+            items: 3.5,
+            margin: 30,
+        },
+        900: {
+            items: 4,
+            margin: 30,
+        },
+        1000: {
+            items: 4,
+            margin: 50,
+        },
+        1300: {
+            items: 4.5,
+            margin: 50,
+        },
+        1600: {
+            items: 5.5,
+            margin: 50,
+        },
+        1800: {
+            items: 6,
+            margin: 50,
+        },
+        1850: {
+            items: 7,
+            margin: 50,
+        }
+    }
 });
 
-$(function () {
-    $(".video-carousel-mobile").slick({
-        centerMode:true,
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 2000,
-        cssEase: "linear",
-        arrows: false,
-        dots: false,
-     
-    });
+
+$('.mobile-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    items:3,
+    autoplayTimeout: 1500,
+    autoplaySpeed: 1500,
+    slideTransition: "linear",
+    stagePadding: 0,
+    autoplayHoverPause: false,
+    responsive: {
+        0: {
+            items: 2.5,
+            margin: 10,
+        },
+        420: {
+            items: 3,
+            margin: 10,
+        },
+        600: {
+            items: 3.5,
+            margin: 20,
+        },
+        800: {
+            items: 3.5,
+            margin: 30,
+        }
+    }
 });
 
 var $st = $('.pagination');
-    var $slickEl = $('.center');
+var $slickEl = $('.center');
 
-    $slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-        var i = (currentSlide ? currentSlide : 0) + 1;
-        $st.text(i + ' of ' + slick.slideCount);
-    });
+$slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $st.text(i + ' of ' + slick.slideCount);
+});
 
-    $slickEl.slick({
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 3,
-        focusOnSelect: true,
-        dots: false,
-        infinite: true,
-        arrows: false,
-        responsive: [
+$slickEl.slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    focusOnSelect: true,
+    dots: false,
+    infinite: true,
+    arrows: false,
+    responsive: [
         {
             breakpoint: 767,
             settings: {
-                slidesToShow: 2, 
-                centerMode: true, 
+                slidesToShow: 2,
+                centerMode: true,
                 centerPadding: '10px',
             }
         },
         {
             breakpoint: 470,
             settings: {
-                slidesToShow: 2, 
+                slidesToShow: 2,
                 centerMode: false,
                 centerPadding: '10px',
             }
         }
     ]
-    });
+});
+
+
+
