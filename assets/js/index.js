@@ -42,7 +42,7 @@ $('.default-carousel').owlCarousel({
         },
         1600: {
             items: 5.5,
-            margin: 50,
+            margin: 0,
         },
         1800: {
             items: 6,
