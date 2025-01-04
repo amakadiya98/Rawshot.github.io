@@ -34,15 +34,15 @@ $('.default-carousel').owlCarousel({
         },
         1000: {
             items: 4,
-            margin: 50,
+            margin: 30,
         },
         1300: {
             items: 4.5,
-            margin: 0,
+            margin: 40,
         },
         1600: {
             items: 5.5,
-            margin: 0,
+            margin: 50,
         },
         1800: {
             items: 6,
